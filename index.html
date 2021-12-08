@@ -8,15 +8,50 @@
     <!-- import css: -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/global.css">
-    <title>Your App</title>
+    <title>Greeting Card Builder</title>
 </head>
 
 <body>
-    Implement you app here, <a href="demo.html">See the demo</a>
+    <h1>Greeting Card</h1>
 
+    <div id="container"> 
+    <section id="inputs">
+        <label for="name-input">Name</label>
+            <input id="name-input" value="Sukhraj Singh">
+    <br>
+    <label for="styles-select">Holiday Pictures</label>
+    <select id="styles-select">    
+        <option value="https://images.unsplash.com/photo-1601582595900-c3e816e6e9e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNhbnRhJTIwY2xhdXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">Santa</option>
+        <option value="https://images.unsplash.com/photo-1512928210967-3dced5ba507b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG9saWRheSUyMGxpZ2h0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">Christmas Lights</option>
+        <option value="https://images.unsplash.com/photo-1511465797926-5381e1add47d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">Christmas Trees</option>
+        <option value="https://media.istockphoto.com/photos/christmas-decoration-with-golden-and-silver-deers-ornaments-with-on-picture-id1286549602?b=1&k=20&m=1286549602&s=170667a&w=0&h=cZKWo2FJiKUmAZCdCXCIZ1LAABRlJLjnZ6EgKj7aGOc=">Deers</option>  
+    </select>
+    <br>
+    <label for="description-textarea">Greeting Message</label> <br>
+    <textarea id="description-textarea">May the true spirit of Christmas shine in your heart and light your path.” "Wishing you and your loved ones a blessed Christmas." "May God bless and keep you during the holiday season and all through the year." "May God bless your life with love and joy this holiday season</textarea>
+        <br>
 
+    <label for="theme-select">Theme</label>
+    <select id="theme-select">
+        <option value="night" selected>Night</option>
+        <option value="Snow">Snow</option>
+        <option value="Grass">Grass</option>
+    </select>
+<br>
+<button id="export-button">Create</button>
+</section>
 
+     
+    <article id="character" class="space">
+        <h2 id="name-header">Sukhraj Singh</h2>
+        <img id="avatar-santa" src="https://cdn2.iconfinder.com/data/icons/christmas-day-10/64/27-christmas-avatar-user-santa_claus-xmas-Father_Christmas-512.png">
+            <p id="description-display">
+                May the true spirit of Christmas shine in your heart and light your path.” <br> "Wishing you and your loved ones a blessed Christmas." "May God bless and keep you during the holiday season and all through the year." <br> "May God bless your life with love and joy this holiday season
+            </p>        
+        </article>  
+      </div>    
 
+      <script src="https://cdn.jsdelivr.net/npm/dom-to-image@2.6.0/src/dom-to-image.min.js"></script>
     <script src="app.js" type="module"></script>
 </body>
 

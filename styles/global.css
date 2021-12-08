@@ -6,6 +6,100 @@
   --color-1: #b9af9e;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-    
+  background-color: cadetblue;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#container {
+  display: grid;
+  justify-items: center;
+}
+
+@media (min-width: 600px) {
+  #container {
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    grid-gap: 30px;
+  }
+}
+
+#inputs {
+  width: 100%;
+  max-width: 400px;
+}
+
+label, input, select, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+label {
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+}
+
+input, select {
+  height: 30px;
+  font-size: 1rem;
+}
+
+#character {
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  border: corl ;
+}
+
+#character h2 {
+  margin: 0 0 20px 0;
+  font-size: 1.75em;
+}
+
+#character p {
+  margin: 20px 0 0 0;
+  font-size: .9em;
+}
+
+.night {
+  background: #240047;
+  color: red;
+  border: 3px solid #00A9D4;
+  font-family: cursive;
+  font-size: 1.0rem;
+}
+
+.Grass {
+  background: #876B53;
+  color: greenyellow;
+  border: 3px solid green;
+  font-family: 'Space Grotesk';
+  font-size: 0.9rem;
+}
+
+.Snow {
+  background: #E9F2F9;
+  color: purple;
+  border: 3px yellow solid; 
+  font-family: 'Lato';
+  font-size: 0.9rem;
+}
+
+#avatar-santa {
+  width: 200px;
+  height: 200px;
 }
